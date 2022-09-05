@@ -50,6 +50,10 @@ public class Job {
     // TODO: Add getters for each field EXCEPT nextId. Add setters for each field EXCEPT nextID
     //  and id.
 
+    public int getId() {
+        return id;
+    }
+
     public String getName() {
         return name;
     }
