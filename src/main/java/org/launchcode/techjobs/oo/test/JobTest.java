@@ -85,7 +85,7 @@ public class JobTest {
         testJob = new Job(name, new Employer(emp), new Location(loc), new PositionType(
                 pos), new CoreCompetency(core));
         testStr = testJob.toString();
-        assertEquals("\nID: ",testStr.substring(0,4));
+        assertEquals("\nID: ",testStr.substring(0,5));
         assertTrue(testStr.contains("\nName: "));
         assertTrue(testStr.contains("\nEmployer: "));
         assertTrue(testStr.contains("\nLocation: "));
@@ -105,7 +105,7 @@ public class JobTest {
         testJob = new Job(name, new Employer(emp), new Location(), new PositionType(
                 ), new CoreCompetency());
         testStr = testJob.toString();
-        System.out.println(testJob.toString());
+//        System.out.println(testJob.toString());
         assertTrue(testStr.contains("Location: Data not available"));
         assertTrue(testStr.contains("Position Type: Data not available"));
         assertEquals(testStr.substring(testStr.indexOf("Core")),"Core Competency: Data not available\n");
